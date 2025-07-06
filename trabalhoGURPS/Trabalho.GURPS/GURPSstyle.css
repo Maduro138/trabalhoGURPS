@@ -1,0 +1,78 @@
+
+body {
+    background-color: gray;
+}
+
+h1 {
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    size:32px;
+}
+
+h2 {
+  color: antiquewhite;  
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color:antiquewhite;
+}
+
+
+/* separação entre gerais para classes e ids */
+
+
+.topPage { 
+    text-align: center;
+    margin: -8px;
+    background-color: black;
+    padding: 15px;
+    padding-bottom: 30px;
+}
+
+.pixelify-sans {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+ #gold {
+    font-family: "Pixelify Sans", sans-serif;
+    color: gold;
+    border: solid, gold;
+    background-color: rgba(255, 217, 0, 0.6);
+    }
+
+
+.menu {
+    list-style: none;
+    margin: -8px;
+    padding: 2px;
+    padding-bottom: 10px;
+    background-color: #1e1f22;
+    display: flex;
+    justify-content: center;
+    }
+
+    .menu li {
+    font-family: "Pixelify Sans", sans-serif;
+    margin: -8px;
+    margin-top: 0;
+    padding-right: 55px;
+    background-color: #1e1f22;
+    }
+
+    .menu a:hover {
+    color: rgb(255, 164, 46);
+    }
