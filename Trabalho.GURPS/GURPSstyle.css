@@ -129,3 +129,57 @@ a {
         color: rgb(255, 164, 46);
     
     }
+
+.nomes ol {
+
+    padding: 0;
+}
+
+    .nomes li {
+        text-align: center;
+        padding-left: 40px;
+
+        padding-top: 10px;
+        margin-top: 50px;
+
+        display: inline-block;
+        background-color: white;
+        border: 5px solid white;
+        border-radius: 10px;
+        color: black;
+        padding-right: 40px;
+
+        transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+
+    }
+    li{
+
+     padding-right: 30px;
+
+    }
+    .nomes li:hover{
+
+        transform: scale(1.2);
+        padding-left: 30px;
+        padding-right: 30px;
+        text-decoration: underline;
+        background-color: black;
+        border: solid black;
+        border-radius: 10px;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .nomes {
+
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -40%);   
+     border-radius: 10px;
+     font-family: Arial, Helvetica, sans-serif;
+     text-decoration: none;
+     text-align: center;
+ }
