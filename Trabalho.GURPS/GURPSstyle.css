@@ -1,6 +1,7 @@
 
 body {
     background-color: gray; 
+
 }
 
 h1 {
@@ -207,3 +208,44 @@ a {
 
 
  }
+ .mestres {
+       
+     color: antiquewhite;  
+     font-family: "Pixelify Sans", sans-serif; 
+     font-size: 15px;
+     padding-top: 15px;
+     padding-bottom: 10px;
+     padding-right: 15px;
+     background-color: rgb(71, 27, 27);
+     border-radius: 10px;
+
+
+      
+ }
+
+ .comosetornarmestre a {
+
+    display: inline-block;  
+    color: #041a5a;
+    text-decoration: underline;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+     
+
+ }
+ .comosetornarmestre a:hover {
+
+    color: #303e66;
+    transform: scale(1.3) translateX(100px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+ 
+ }
+
+
+  .prolado {
+   
+    padding-left: 15px;
+    padding-right: 10px;
+     
+  }
