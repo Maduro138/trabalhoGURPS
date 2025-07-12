@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GURPS</title>
     <link rel="stylesheet" href="GURPSstyle.css">
-
+    <script src="estrutura.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
@@ -73,9 +73,11 @@
 
     <ul class="comosetornarmestre">
      <li> 
-      <p class="mestres"> Conhecimento do sistema de base </p>
+      <p class="mestres"> Conhecimento do sistema de base  <strong class="seta">▼</strong> </p>
+
         <p> <a href="https://www.rpgnext.com.br/sistemas-de-rpg/regras-do-gurps/?srsltid=AfmBOooqHf3hzuc3l2a47X5Mu8VjqOgNxzwnNqM607QU8UgLcUz-PI9C">- Sistema base, como aprender?</a>
          </p>
+         <div class="Texto">
           <p>  
              GURPS tem um núcleo bem definido no GURPS Basic Set (dividido em dois livros: Characters e Campaigns). Antes de pensar em mestrar, é fundamental entender os conceitos principais:
 
@@ -87,11 +89,13 @@
 
              Dominar essas regras garante que você consiga conduzir sessões com fluidez e justiça.
               </p>
+              </div>
      </li>
 
      <li>
-      <p class="mestres"> Cenários </p>
+      <p class="mestres"> Cenários <strong class="seta">▼</strong> </p>
        <p> <a href="https://covilgurps.wordpress.com/cenarios/">- Cenários e seus tipos </a></p>
+       <div class="Texto">
        <p>
          Um dos grandes atrativos de GURPS é a possibilidade de criar mundos próprios. Mas para começar, você pode usar suplementos prontos como:
 
@@ -105,21 +109,85 @@
 
 
        </p>
-
+</div>
      </li>
 
      <li>
-     <p class="mestres"> Adaptação e justiça </p>
+     <p class="mestres"> Adaptação e justiça  <strong class="seta">▼</strong> </p>
      <p><a href="https://pt.scribd.com/document/578950039/como-improvisar-no-rpg">- Quer dar uma improvisada? </a></p>
+     <div class="Texto">
       <p>
          Como mestre, você é o facilitador da diversão. Você deve entender o que motiva os jogadores: eles preferem combates estratégicos, drama interpretativo ou investigações complexas? <br> Use o GURPS para adaptar sua campanha aos gostos do grupo. O sistema é modular, então você pode simplificar regras de combate ou aprofundar sistemas de magia conforme a necessidade. <br>
          Se você leu até aqui, pode perceber que o GURPS é um jogo complexo e envolve grandes regras. Muitas vezes essas regras causam embates entre os jogadores, e você tem que ser imparcial em <strong>TODAS</strong> as decisões!  
 
       </p>
+      </div>
      </li>
     </ul>
-  
 
+    <div class="gif">
+      <a href="https://www.facebook.com/groups/GURPS.BR/" target="_blank">
+      <img src="Imagens/Logo gurps.gif" alt="Logo Gurps">
+      </a>
+    </div>
+  
+   <script>
+    /*
+    const mestres= document.querySelectorAll(".mestres")
+     mestres.forEach (elemento=> {
+    elemento.addEventListener('click',()=> {
+   elemento.style.backgroundColor= "blue" ;
+
+    });
+
+
+
+ elemento.addEventListener('dblclick',()=> {
+    elemento.style.backgroundColor= " rgb(71, 27, 27)" ;
+    });
+    });
+    */
+const containers = document.querySelectorAll(".comosetornarmestre");
+
+containers.forEach(comosetornarmestre => {
+
+    const mestres= comosetornarmestre.querySelector(".mestres");
+    const Texto= comosetornarmestre.querySelector(".Texto");
+    const seta= comosetornarmestre.querySelector(".seta");
+
+    mestres.addEventListener('click',() => {
+
+      Texto.classList.toggle("ativa");
+      seta.classList.toggle("girada");
+
+    });
+  });
+
+    
+
+    
+/*
+      MUDARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+ 
+    const gif = document.querySelector(".gif")
+     gif.addEventListener('mouseover',() =>  {
+     gif.style.top= "-30px";
+     gif.style.bottom= "auto";
+
+     });
+     gif.addEventListener('mouseout',()=>{
+      gif.style.top= "";
+      gif.style.bottom= "15px";
+     }
+    );
+
+  */ 
+
+ 
+    
+
+
+   </script>
 
 
     
