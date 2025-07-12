@@ -273,23 +273,24 @@ a {
      
   }
   section {
-    margin-bottom: 100px;
+    margin-bottom: 180px;
 
   }
 
   .seta{
 
      display: inline-block;
-     transition: transform 1s ease;
+     transition: transform 1.8s ease;
   }
   .seta.girada{
 
      transform: rotate(180deg);
   }
   .Texto {
+   
     max-height: 0;
     overflow: hidden;
-    transition: max-height 1s ease;
+    transition: max-height 2s ease;
     background-color: #f9f9f9;
     border: 5px solid rgb(58, 51, 42);
     margin-top: 10px;
@@ -299,4 +300,5 @@ a {
   .Texto.ativa {
     max-height: 300px;
     padding: 10px;
+    
   }
