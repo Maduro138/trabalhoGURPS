@@ -302,3 +302,8 @@ a {
     padding: 10px;
     
   }
+  #espada {
+   position: absolute;
+
+    pointer-events: none;
+  }
