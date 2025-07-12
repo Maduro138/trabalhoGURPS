@@ -50,6 +50,8 @@
     });
     
    */ 
+  
+    /*FAZERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR animação de uma espadinha */
   const espada = document.getElementById('espada');
 
   let posX = 0;
@@ -64,7 +66,7 @@
   });
 
   function animate() {
-    const speed = 0.15;
+    const speed = 0.12;
 
     posX += (mouseX - posX) * speed;
     posY += (mouseY - posY) * speed;
@@ -72,7 +74,7 @@
     espada.style.left = (posX + 10) + 'px';
     espada.style.top = (posY + 10) + 'px';
 
-    // força o tamanho aqui também, só pra garantir
+
     espada.style.width = '5px';
     espada.style.height = '5px';
 

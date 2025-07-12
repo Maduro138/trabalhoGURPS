@@ -304,6 +304,8 @@ a {
   }
   #espada {
    position: absolute;
-
     pointer-events: none;
+
+
+    
   }
