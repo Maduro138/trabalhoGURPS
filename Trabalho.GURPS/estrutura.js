@@ -51,22 +51,30 @@
     
    */ 
   
-    /*FAZERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR animação de uma espadinha */
+  
   const espada = document.getElementById('espada');
 
+ /* Começa do 0*/
   let posX = 0;
   let posY = 0;
 
   let mouseX = 0;
   let mouseY = 0;
+ 
+  /* Quando o mouse se move, a espadinha segue ele */
 
   document.addEventListener('mousemove', e => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-  });
 
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+
+  });
+    
+     /* Função de animação da espadinha*/
+     
   function animate() {
-    const speed = 0.12;
+
+    const speed = 0.10;
 
     posX += (mouseX - posX) * speed;
     posY += (mouseY - posY) * speed;
@@ -82,6 +90,12 @@
   }
 
   animate();
+
+
+
+
+
+
     
 /*
       MUDARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
@@ -99,5 +113,40 @@
     );
 
   */ 
+     let tempo = 0;
+     let min=0;
+     function relogio(){
+      tempo++;
+     
+      if (tempo >= 60){
+        tempo = 0;
+        min++;
+      }
 
- 
+        if(min>0)
+       {
+         document.getElementById("relogio1").textContent=  " Você está aqui há " +min+ "Minutos  e " +tempo+ " segundos ";
+
+      }
+         else {
+          document.getElementById("relogio1").textContent=  " Você está aqui há " +tempo+ " segundos";
+
+         }
+
+     }
+      setInterval(relogio,1000);
+      relogio();
+
+      /* Função de tempo*/
+    function relogio3 () {
+
+    
+      const now = new Date ();
+      const time = now.toLocaleTimeString();
+      document.getElementById("relogio2").textContent = "A hora local é " + time;
+    }
+  
+      setInterval(relogio3,1000);
+      relogio3();
+      
+  
