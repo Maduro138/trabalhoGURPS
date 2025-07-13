@@ -116,29 +116,51 @@
      let tempo = 0;
      let min=0;
      function relogio(){
-      tempo++;
-     
-      if (tempo >= 60){
-        tempo = 0;
-        min++;
-      }
-
-        if(min>0)
+    
+      if(min === 1)
        {
-         document.getElementById("relogio1").textContent=  " Você está aqui há " +min+ "Minutos  e " +tempo+ " segundos ";
+         document.getElementById("relogio1").textContent=  " Você está aqui há " +min+ " Minuto  e " +tempo+ (tempo === 0 || tempo === 1  ?  " segundo " : " segundos ");
 
       }
+      
+        else if(min > 1 && tempo === 1 )
+       {
+         document.getElementById("relogio1").textContent=  " Você está aqui há " +min+ " Minutos  e " +tempo+ " segundo ";
+
+      }
+        
+      else if(min>1 && tempo > 1) {
+
+          document.getElementById("relogio1").textContent=  " Você está aqui há " +min+ " Minutos  e " +tempo+ " segundos ";
+
+
+      }
+         else if (tempo === 1){
+
+          document.getElementById("relogio1").textContent=  " Você está aqui há " +tempo+ " segundo";
+
+         } 
          else {
           document.getElementById("relogio1").textContent=  " Você está aqui há " +tempo+ " segundos";
 
          }
 
-     }
+     
+
+
+     tempo++;
+      if (tempo >= 60){
+        tempo = 0;
+        min++;
+      } 
+    }
+
       setInterval(relogio,1000);
       relogio();
 
+
       /* Função de tempo*/
-    function relogio3 () {
+     function relogio3 () {
 
     
       const now = new Date ();
