@@ -113,6 +113,9 @@
     );
 
   */ 
+ 
+     /* Função relógio*/
+
      let tempo = 0;
      let min=0;
      function relogio(){
@@ -170,5 +173,12 @@
   
       setInterval(relogio3,1000);
       relogio3();
+
+
+
+
+      
+
+
       
   
