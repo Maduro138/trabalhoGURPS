@@ -209,7 +209,7 @@ a {
 
  }
  .mestres {
-       
+   
      color: antiquewhite;  
      font-family: "Pixelify Sans", sans-serif; 
      font-size: 15px;
@@ -348,21 +348,26 @@ a {
    }
 
 
-#WhatIsGurps {
+.WhatIsGurps {
 
   background-color: ghostwhite;
   display: inline-block;
   width: 600px;
+
   float:right;
 
   margin-top: 16px;
+
   padding: 10px 10px 10px 10px;
+  
   border: 4px solid black;
   border-radius: 5px;
-
   text-align: center;
 }
 
 #WhatIsGurps  h2 {
   color: black;
+}
+.abaixo {
+  margin-top: 50px;
 }
