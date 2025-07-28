@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script src="estrutura.js" defer></script>
 <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -24,6 +25,8 @@
     <li><a href="https://www.google.com/search?q=dice&source=hp&iflsig=AOw8s4IAAAAAaGnTx4yajITcobi1Nju8ILPT_SnGxGeH&oq=">Dices?</a> <img src="Imagens/Captura de tela 2025-05-25 200232.png" ></li>
     </ul>
 
+    <h2 id="BeforePlay">Antes de começar a a jogar</h2>
+
     <p>
         Para jogar GURPS, é necessário um grupo de jogadores (incluindo um mestre), dados de seis lados ( d6, no mínimo 3 deles), fichas de personagens e o livro de regras básico. Os jogadores criam seus personagens definindo atributos, vantagens, desvantagens, perícias e histórico, enquanto o mestre prepara o cenário, os desafios e controla os NPCs.
     </p>
@@ -35,8 +38,79 @@
     <p>
         Além dos materiais físicos, o mais importante é usar o raciocínio e a criatividade para fluir as histórias juntos. O jogo é mais proveitoso quando todos estão envolvidos e respeitam o fluxo da narrativa (não sendo necessário ter experiência prévia para jogar o sistema).
     </p>
+</section>
 
+  <section class="ficha">
+    <p>Exemplo de ficha</p>
 
+  <p>Informações</p>
+    <article class="tableFicha">
+  <table>
+    <tr><th>Nome</th><td>Ademir</td></tr>
+    <tr><th>Raça</th><td>Humano</td></tr>
+    <tr><th>Idade</th><td>46</td></tr>
+  </table>
+    </article>
+  <p>Atributos</p>
+    <article class="tableFicha">
+  <table>
+    <tr><th>ST</th><th>DX</th><th>IQ</th><th>HT</th></tr>
+    <tr><td>10</td><td>10</td><td>10</td><td>10</td></tr>
+  </table>
+    </article>
+
+  <p>Vantagens</p>
+    <article class="tableFicha">
+  <table>
+    <tr><th>Nome</th><th>Pontos</th></tr>
+    <tr><td>Ambidestria</td><td>5</td></tr>
+  </table>
+    </article>
+
+  <p>Desvantagens</p>
+    <article class="tableFicha">
+  <table>
+    <tr><th>Nome</th><th>Pontos</th></tr>
+    <tr><td>Curioso</td><td>-5</td></tr>
+  </table>
+    </article>
+
+  <p>Perícias</p>
+    <article class="tableFicha">
+  <table>
+    <tr><th>Nome</th><th>Nível</th></tr>
+    <tr><td>Espada </td><td>12</td></tr>
+    <tr><td>1ºs Socorros</td><td>11</td></tr>
+  </table>
+    </article>
+
+  <p>Equipamentos</p>
+    <article class="tableFicha">
+  <table>
+    <tr><th>Item</th><th>Peso</th></tr>
+    <tr><td>Espada </td><td>7 lbs</td></tr>
+    <tr><td>Mochila</td><td>10 lbs</td></tr>
+  </table>
+    </article>
+</section>
+
+<img id="portrait" src="Imagens/portraitCenario.jpeg" alt="">
+
+    <section id="Gold">
+    <h2>Regra de ouro</h2>
+
+    <p>
+        A regra de ouro do RPG de mesa pode ser resumida em "Se divertir e respeitar os jogadores além de qualquer outra coisa". No fim das contas, o principal objetivo das sessões deve ser a diversão de todos os envolvidos. O RPG é um espaço onde a criatividade e a colaboração são o motor da experiência, então não faz sentido deixar que desentendimentos ou falta de respeito estraguem a experiência. A coletividade é o que torna o jogo especial, isso é a base de tudo.
+    </p>
+
+    <p>
+        Respeitar os jogadores vai muito além de ser educado, é sobre dar espaço para que cada pessoa se expresse, para que suas ideias e ações sejam ouvidas e valorizadas. Cada jogador traz algo único para a mesa, seja através de seus personagens, suas histórias ou seu estilo de jogo. A mesa de RPG é um ambiente onde todos devem se  sentir à vontade para se entregar ao jogo, sem medo de serem julgados ou interrompidos.
+    </p>
+
+    <p>
+        No final, a regra de ouro é uma lembrança de que o RPG não é apenas um jogo, mas uma experiência social. É uma oportunidade para fortalecer amizades, criar memórias e construir um espaço seguro, onde todos se sintam confortáveis para explorar suas ideias e se divertir sem pressões.
+    </p>
+    </section>
 
  <section id="GMandPlayers">
 
@@ -50,7 +124,7 @@
      <li> 
       <p class="mestres"> Conhecimento do sistema de base  <strong class="seta">▼</strong> </p>
 
-        <p> <a href="https://www.rpgnext.com.br/sistemas-de-rpg/regras-do-gurps/?srsltid=AfmBOooqHf3hzuc3l2a47X5Mu8VjqOgNxzwnNqM607QU8UgLcUz-PI9C">- Sistema base, como aprender?</a>
+        <p> <a href="https://covilgurps.wordpress.com/wp-content/uploads/2012/08/gurps-mc3b3dulo-bc3a1sico1.pdf">- Sistema base, como aprender?</a>
          </p>
          <div class="Texto">
           <p>  
@@ -70,7 +144,7 @@
      <li>
       <p class="mestres"> Cenários <strong class="seta">▼</strong> </p>
        <p> <a href="https://covilgurps.wordpress.com/cenarios/">- Cenários e seus tipos </a></p>
-       <div class="Texto">
+       <article class="Texto">
          <p>
          Um dos grandes atrativos de GURPS é a possibilidade de criar mundos próprios. Mas para começar, você pode usar suplementos prontos como:
 
@@ -81,46 +155,26 @@
          GURPS Horror ou GURPS Cyberpunk. <br>
 
          Depois de se familiarizar com as regras, você pode começar a criar seu próprio mundo, misturando gêneros ou inventando algo totalmente novo.
-
-
-          </p>
-        </div>
+         </p>
+        </article>
      </li>
 
      <li>
      <p class="mestres"> Adaptação e justiça  <strong class="seta">▼</strong> </p>
      <p><a href="https://pt.scribd.com/document/578950039/como-improvisar-no-rpg">- Quer dar uma improvisada? </a></p>
-     <div class="Texto">
+     <article class="Texto">
       <p>
          Como mestre, você é o facilitador da diversão. Você deve entender o que motiva os jogadores: eles preferem combates estratégicos, drama interpretativo ou investigações complexas? <br> Use o GURPS para adaptar sua campanha aos gostos do grupo. O sistema é modular, então você pode simplificar regras de combate ou aprofundar sistemas de magia conforme a necessidade. <br>
          Se você leu até aqui, pode perceber que o GURPS é um jogo complexo e envolve grandes regras. Muitas vezes essas regras causam embates entre os jogadores, e você tem que ser imparcial em <strong>TODAS</strong> as decisões!  
 
       </p>
-      </div>
-
-
-
-    <section id="Gold">
-    <h2>Regra de ouro</h2>
-    </section>
-    
-
+    </article>
 
 <a href="tela_principal_GrupoGURPS.html">Volte para a pagina principal</a></li>
-<div class="aviso">
-<p>Versão Beta(0.07)<br>
-1- Links foram atualizados!<br>
-2- Inclusão de Javascript.<br>
-3- Novas animações<br>
-4-  [ :root ] incluído.<br>
 
-Fase de <strong>teste</strong> ✈️</p>
-</div>
- <div id="espada">
+ <section id="espada">
       <img src="Imagens/espadinha logo4.png" alt="espada">
-     </div>
-    
-
+ </section>
 
 </body>
 </html>
