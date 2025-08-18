@@ -342,3 +342,8 @@ a {
   border: 3px solid white;
   border-radius: 5px;
 }
+#centeronediv {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
