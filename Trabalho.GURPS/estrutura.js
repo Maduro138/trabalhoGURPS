@@ -174,7 +174,20 @@
       setInterval(relogio3,1000);
       relogio3();
 
+      
+         const currentPage = window.location.href.split("/").pop().split("?")[0];
+       const links= document.querySelectorAll('.menu a');
 
+      links.forEach(link => {
+
+        const linkPage = link.getAttribute('href').split("/").pop().split("?")[0];
+
+        if (linkPage === currentPage)
+           {
+          link.classList.add('active');
+          
+        }
+      });
 
 
       
