@@ -115,7 +115,7 @@
   */ 
  
      /* Função relógio*/
-
+/*
      let tempo = 0;
      let min=0;
      function relogio(){
@@ -163,6 +163,7 @@
 
 
       /* Função de tempo*/
+      /*
      function relogio3 () {
 
     
@@ -173,8 +174,13 @@
   
       setInterval(relogio3,1000);
       relogio3();
+*/
+            
+       
+        window.addEventListener('DOMContentLoaded',()=> {
+          document.body.classList.add('fadein');
+        } );          
 
-      
          const currentPage = window.location.href.split("/").pop().split("?")[0];
        const links= document.querySelectorAll('.menu a');
 
@@ -187,7 +193,41 @@
           link.classList.add('active');
           
         }
+        link.addEventListener('click',function(e){
+
+            if (link.href.indexOf(window.location.origin) !== 0) return;
+         e.preventDefault();
+         document.body.classList.remove('fadein');
+         document.body.classList.add('fadeout');
+         setTimeout(() => {
+          window.location.href = link.href;
+         }, 600);   
+        })
       });
+
+
+
+     let dark = document.getElementById("Darkmode");
+     
+     dark.addEventListener("click",()=>{
+
+      document.body.style.color="Black";
+     });
+
+
+ 
+  /*
+        if (document.body.style.backgroundColor === "black") {
+      document.body.style.backgroundColor = "white";
+      document.body.style.color = "black";
+    } else {
+      document.body.style.backgroundColor = "black";
+      document.body.style.color = "white";
+    }
+      */
+  
+         
+      
 
 
       
