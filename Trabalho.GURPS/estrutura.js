@@ -206,14 +206,14 @@
       });
 
 
-
+        /*
      let dark = document.getElementById("Darkmode");
      
-     dark.addEventListener("click",()=>{
+     dark.addEventListener("dblclik",()=>{
 
       document.body.style.color="Black";
      });
-
+     */
 
  
   /*
@@ -225,6 +225,15 @@
       document.body.style.color = "white";
     }
       */
+
+    function Drkmd() {
+   
+        let sec = document.getElementById("Darkmm");
+        sec.classList.toggle("darkmode");
+   
+    
+      
+    }
   
          
       

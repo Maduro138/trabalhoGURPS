@@ -227,7 +227,7 @@ a {
 
  .mestres  {
    
-     color: var(--cor2);  
+     color: white;
      font-family: "Pixelify Sans", sans-serif; 
      font-size: 15px;
      padding-top: 15px;
@@ -280,12 +280,14 @@ a {
 
   .seta{
      display: inline-block;
-     transition: transform 1.8s ease;
+     transition: all 1.4s ease;
+     color: black;
   }
 
   .seta.girada{
 
      transform: rotate(180deg);
+     color: white;
   }
 
   .Texto {
@@ -316,7 +318,7 @@ a {
     color: var(--cor2);
   }
 
-.WhatIsGurps {
+#WhatIsGurps {
 
   background-color: ghostwhite;
   width: 600px;
@@ -328,10 +330,12 @@ a {
   text-align: center;
   color: var(--cor2);
 }
-.WhatIsGurps p {
+
+
+#WhatIsGurps p {
   color: var(--cor2);
 }
-.WhatIsGurps  h2 {
+#WhatIsGurps  h2 {
   color: black;
 }
 .abaixo {
@@ -340,7 +344,7 @@ a {
  
 .comosetornarmestre p {
 
-  color: var(--cor2);
+  color: black;
 }
 
 .ficha {
@@ -408,5 +412,21 @@ a {
 #Darkmode {
  
    cursor: pointer;
+   position: sticky;
 
-}    
+}  
+  
+  #Darkmm{
+
+    color: white;
+    transition: all  0.5s ease;
+  }
+ 
+#Darkmm.darkmode p {
+
+  color: black;
+  transition: all 0.5 ease ;
+
+}
+
+ 
