@@ -229,9 +229,8 @@
     function Drkmd() {
    
         let sec = document.getElementById("Darkmm");
-        sec.classList.toggle("darkmode");
-   
-    
+        
+        sec.classList.toggle("darkmode");    
       
     }
   
