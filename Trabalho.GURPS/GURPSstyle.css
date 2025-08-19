@@ -113,6 +113,9 @@ a {
     background-color: #1e1f22;
     display: flex;
     justify-content: center;
+    border: #1e1f22 solid;
+    border-radius: 10px;
+
    
     }
 
@@ -158,10 +161,12 @@ a {
 .nomes ol {
 
     padding: 0;
+    text-align: center;
 }
 
-    .nomes li {
-        text-align: center;
+    .nomes ol li{
+
+    
         padding-left: 40px;
 
         padding-top: 10px;
@@ -183,12 +188,12 @@ a {
      padding-right: 30px;
     }
 
-    .nomes li:hover{
+    .nomes ol li:hover{
 
         transform: scale(1.2);
+
         padding-left: 30px;
         padding-right: 30px;
-        text-decoration: underline;
         background-color: black;
         border: solid black;
         border-radius: 10px;
@@ -198,14 +203,14 @@ a {
        /* opacity: 1; */
     }
  
-    .nomes {
+    .nomes ol li {
        margin-left: 30px;
        /* opacity: 1; */
      font-size: 35px;
-     position: absolute;
      top: 25%;
      left: 50%;
-     transform: translate(-50%, -40%);   
+     flex-direction: column;
+     
      border-radius: 10px;
      font-family: Arial, Helvetica, sans-serif;
      text-decoration: none;
@@ -220,6 +225,8 @@ a {
     padding-left: 40%;
     padding-right: 40%;
     border: #1e1f22 solid;
+    margin-left: -8px;
+    margin-right: -8px;
     border-radius: 10px;
     background-color: #1e1f22;
 
@@ -293,9 +300,8 @@ a {
   .Texto {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 2s ease;
+    transition: all 2s linear;
     background-color: #f9f9f9;
-    border: 5px solid rgb(58, 51, 42);
     margin-top: 10px;
     padding: 0px 10px;
     border-radius: 10px;
@@ -304,6 +310,7 @@ a {
   .Texto.ativa {
     max-height: 300px;
     padding: 10px;
+    border: 5px solid rgb(58, 51, 42);
     
   }
 
@@ -403,7 +410,7 @@ a {
   margin-bottom: 100px;
   margin-top: 80px;
 }
-    .menu a.active {
+.menu a.active {
       color: gray;
       pointer-events: none;
       cursor: default;
@@ -413,20 +420,71 @@ a {
  
    cursor: pointer;
    position: sticky;
+   top: 0;
 
 }  
   
-  #Darkmm{
+#Darkmm{
 
     color: white;
     transition: all  0.5s ease;
+    margin-left: 35px;
+    margin-right: 80px;
   }
- 
+#Darkmm.darkmode{
+      transition: all 0.5 ease;
+      color: black;
+
+
+  }
 #Darkmm.darkmode p {
 
   color: black;
   transition: all 0.5 ease ;
 
 }
+#Backtopage {
+ 
+   margin: 30px;
+   transition: all 1s linear;
+   display: inline-block; 
+   
+}
+#Backtopage:hover {
+   
+  opacity: 0.5;
+  transform: scale(0.8);
+
+}
+.nomes li p {
+
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  max-height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+}
+.nomes li:hover p  {
+  padding: 15px;
+  visibility: visible;
+  opacity: 1;
+  max-height: 60px;
+
+}
+.nomes li:hover p a {
+
+  text-decoration: underline;
+
+}
+.nomes li p img {
+
+  margin-right: 10px;
+
+}
+
 
  
