@@ -232,14 +232,9 @@
         
         sec.classList.toggle("darkmode");    
       
+
+      
+
     }
-  
-         
-      
-
-
-      
-
-
       
   
