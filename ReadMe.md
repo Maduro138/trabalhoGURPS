@@ -1,6 +1,6 @@
 O trabalho está em andamento!
 
-Em sua versão beta.
+Em sua versão alpha.
 
 Iremos incluir Javascript, css e mais html ao longo da jornada de construção do trabalho!
 
