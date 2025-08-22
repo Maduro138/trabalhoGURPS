@@ -307,10 +307,10 @@ a {
     border-radius: 10px;
   }
 
-  .Texto.ativa {
+  .Texto.ativado {
     max-height: 300px;
     padding: 10px;
-    border: 5px solid rgb(58, 51, 42);
+    border: 2px solid rgb(58, 51, 42);
     
   }
 
@@ -477,14 +477,21 @@ a {
 }
 .nomes li:hover p a {
 
-  text-decoration: underline;
+ text-decoration: underline;
 
 }
 .nomes li p img {
-
+ 
+  animation: rotating 1.3s linear  0s infinite alternate;
   margin-right: 10px;
 
 }
+@keyframes rotating {
+  from{ transform: rotate(15deg);}
+  to { transform: rotate(-15deg);}
+  
+}
+
 
 
  @media (max-width:480px){

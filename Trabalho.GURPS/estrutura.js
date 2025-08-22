@@ -26,7 +26,7 @@
 
      mestres.addEventListener('click',() => {
 
-      Texto.classList.toggle("ativa");
+      Texto.classList.toggle("ativado");
       seta.classList.toggle("girada");
 
     });
