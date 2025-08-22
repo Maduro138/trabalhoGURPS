@@ -487,4 +487,7 @@ a {
 }
 
 
- 
+ @media (max-width:480px){
+
+  li.menu{ width: calc(100%/2);}
+ }
